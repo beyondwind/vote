@@ -1,6 +1,0 @@
-#set($layout="layout/head.vm")
-
-<div class="container">
-	<img src="$!voteUser.avatar" class="img-circle center-block" style="width: 128px;height: 128px">
-	<h1 class="text-center">欢迎您！<b class="text-primary">$!voteUser.nickName</b></h1>
-</div>
