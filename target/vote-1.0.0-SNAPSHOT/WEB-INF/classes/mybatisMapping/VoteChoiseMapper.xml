@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE mapper 
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.lijiabei.vote.biz.dao.VoteChoiseDao">
+	<resultMap type="cn.lijiabei.vote.biz.domain.VoteChoiseDO" id="VoteChoiseResult">
+		<id property="id" column="id" />
+		<result property="activityId" column="activity_id" />
+		<result property="detail" column="detail" />
+		<result property="gmtCreate" column="gmt_create" />
+		<result property="gmtModified" column="gmt_modified" />
+	</resultMap>
+
+	<!-- select -->
+	<select id="selectVoteChoiseList" parameterType="cn.lijiabei.vote.biz.bo.QueryVoteChoiseBO"
+		resultMap="VoteChoiseResult">
+		SELECT id,activity_id,detail,gmt_create,gmt_modified FROM vote_choise where activity_id=#{activityId}
+	</select>
+
+	<!-- insert -->
+	<insert id="insertVoteChoise" parameterType="cn.lijiabei.vote.biz.domain.VoteChoiseDO">
+		<selectKey resultType="Long" keyProperty="id" order="AFTER">
+			SELECT LAST_INSERT_ID()
+		</selectKey>
+		INSERT INTO
+		vote_choise(id,activity_id,detail,gmt_create,gmt_modified)
+		VALUES(null,#{activityId},#{detail},#{gmtCreate},#{gmtModified})
+	</insert>
+
+	<!-- update -->
+	<update id="updateVoteChoise" parameterType="cn.lijiabei.vote.biz.domain.VoteChoiseDO">
+		UPDATE vote_choise SET
+		activity_id=#{activityId},
+		detail=#{detail},
+		gmt_create=#{gmtCreate},
+		gmt_modified=#{gmtModified}
+		WHERE id=#{id}
+	</update>
+
+</mapper>

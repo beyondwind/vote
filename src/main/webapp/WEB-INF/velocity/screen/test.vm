@@ -1,0 +1,79 @@
+#set($layout="layout/test.vm")
+
+<h1>测试页面</h1>
+<p>$!value</p>
+
+<div class="panel panel-default">
+<div class="panel-heading">活动看点</div>
+<div class="panel-body">
+<h3>朱家尖南沙</h3>
+<p>标准的沙滩，可以游泳，自带泳裤，有免费的换洗。</p>
+<img src="https://dimg06.c-ctrip.com/images/fd/tg/g1/M00/AE/14/CghzfFSmB_WAImXSAAMONcirozE673_C_640_10000.jpg">
+<p>里面有小摊的海鲜烧烤，有些小贵，游累了买点垫垫肚子还是不错的。</p>
+<img src="https://dimg03.c-ctrip.com/images/fd/tg/g2/M08/B0/3E/Cghzf1SmCJ2ANpy-AAS0zncrjwI914_C_640_10000.jpg">
+<br/>
+<h3>朱家尖乌石塘</h3>
+<p>一个由鹅卵石铺成的海滩，天然的，另外花钱可以从这里出海捕鱼。</p>
+<img src="https://dimg06.c-ctrip.com/images/fd/tg/g1/M05/AD/D7/CghzflSmCviAU-zGAAPcdlmSqsU071_C_640_10000.jpg">
+<img src="https://dimg06.c-ctrip.com/images/fd/tg/g2/M06/B0/46/CghzgVSmCw2ASbshAAJry5kcPSs331_C_640_10000.jpg">
+<br/>
+<h3>沈家门夜排挡</h3>
+<p>沈家门夜排档坐落在著名的世界三大群众性渔港之一的沈家门渔港边，依山傍海，以观海景、尝海鲜、购海货为特色，与国家级风景名胜区普陀山、朱家尖以及金庸笔下的桃花岛隔海相望。</p>
+<img src="http://s13.sinaimg.cn/mw690/001JRYgHgy6Vsrra69Cec&690">
+<img src="http://s4.sinaimg.cn/middle/3fa6c07fg8b3d74889fe3&690">
+<img src="https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike150%2C5%2C5%2C150%2C50/sign=d5e1e2ee79cf3bc7fc0dc5beb069d1c4/e7cd7b899e510fb3bdcc6974d033c895d0430c7f.jpg">
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">安排细节</div>
+<div class="panel-body">
+<div class="list-group">
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">2017-9-23 8:00</h4>
+    <p class="list-group-item-text">从黄龙时代广场出发</p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">2017-9-23 12:00</h4>
+    <p class="list-group-item-text">到达舟山沈家门东港凯宏广场（综合体的商城）吃饭，类似外婆家、鲈鱼啥的这类的</p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">2017-9-23 13:30</h4>
+    <p class="list-group-item-text">出发前往朱家尖乌石塘，大约14点到，玩1个小时</p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">2017-9-23 15:00</h4>
+    <p class="list-group-item-text">出发前往朱家尖南沙，大约15:30到，玩1个小时，可以游泳，不过海水可能比较冷了</p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">2017-9-23 17:00</h4>
+    <p class="list-group-item-text">离开前往沈家门夜排档，预计17:30到，停车可能会花比较长时间</p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">2017-9-23 20:00</h4>
+    <p class="list-group-item-text">差不多吃完，去宾馆，舟山其实没啥夜生活的</p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">2017-9-24 10:00</h4>
+    <p class="list-group-item-text">睡到自然醒，随便找个地方吃午餐</p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">2017-9-24 12:00</h4>
+    <p class="list-group-item-text">下午开车回杭州</p>
+  </a>
+</div>
+<p class="text-warning">周六中午如果自带食物不去商城吃饭，时间容易宽裕些。</p>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">费用</div>
+<div class="panel-body">
+<ul>
+  <li>高速费用，从彭埠互通上高速单趟，170元(含过桥费)，来回340</li>
+  <li>景区乌石塘+南沙联票120元</li>
+  <li>油费，整体大约550公里，300~400元吧，看你车子了</li>
+  <li>酒店，50元的青年旅店~2000元的五星级海景房</li>
+  <li>夜排档，吃好点按人均200元计算吧</li>
+  <li>其它，看着办吧</li>
+</ul>
+</div>
+</div>

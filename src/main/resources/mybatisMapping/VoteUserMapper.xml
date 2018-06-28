@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE mapper 
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.lijiabei.vote.biz.dao.VoteUserDao">
+	<resultMap type="cn.lijiabei.vote.biz.domain.VoteUserDO" id="VoteUserResult">
+		<id property="id" column="id" />
+		<result property="userFrom" column="user_from" />
+		<result property="platId" column="plat_id" />
+		<result property="nickName" column="nick_name" />
+		<result property="avatar" column="avatar" />
+		<result property="gmtCreate" column="gmt_create" />
+		<result property="gmtModified" column="gmt_modified" />
+	</resultMap>
+
+	<!-- select -->
+	<select id="selectVoteUserById" parameterType="cn.lijiabei.vote.biz.bo.QueryVoteUserBO"
+		resultMap="VoteUserResult">
+		SELECT 
+			id,user_from,plat_id,nick_name,avatar,gmt_create,gmt_modified 
+		FROM 
+			vote_user 
+		WHERE 
+			user_from=#{userFrom}
+			AND plat_id=#{platId}
+	</select>
+
+	<!-- insert -->
+	<insert id="insertVoteUser" parameterType="cn.lijiabei.vote.biz.domain.VoteUserDO"
+		useGeneratedKeys="true" keyProperty="id">
+		INSERT INTO
+		vote_user(id,user_from,plat_id,nick_name,avatar,gmt_create,gmt_modified)
+		VALUES(null,#{userFrom},#{platId},#{nickName},#{avatar},NOW(),NOW())
+	</insert>
+
+	<!-- update -->
+	<update id="updateVoteUser" parameterType="cn.lijiabei.vote.biz.domain.VoteUserDO">
+		UPDATE vote_user SET
+		user_from=#{userFrom},
+		plat_id=#{platId},
+		nick_name=#{nickName},
+		avatar=#{avatar},
+		gmt_modified=NOW()
+		WHERE id=#{id}
+	</update>
+
+</mapper>
